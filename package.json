@@ -1,0 +1,51 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Curso de Js com TDD",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "test": "./node_modules/.bin/mocha src/*.spec.js",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open",
+    "prepush": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markossilva/js-tdd-course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Markos Silva <markosrsilva@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markossilva/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/markossilva/js-tdd-course#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.5",
+    "mocha": "^6.2.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

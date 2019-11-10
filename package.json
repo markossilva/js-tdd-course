@@ -41,19 +41,22 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "husky": "^3.0.5",
+    "jsdom": "^15.2.1",
+    "jsdom-global": "^3.0.2",
     "mocha": "^6.2.2",
+    "node-fetch": "^2.6.0",
     "nodemon": "^1.19.4",
     "sinon": "^7.5.0",
     "sinon-chai": "^3.3.0",
+    "sinon-stub-promise": "^4.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1",
-    "sinon-stub-promise": "^4.0.0",
-    "node-fetch": "^2.6.0"
+    "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "spotify-wrapper": "^2.1.0"
   }
 }

@@ -9,7 +9,8 @@
     "test": "./node_modules/.bin/mocha --require @babel/register tests/*.spec.js --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "server": "./node_modules/.bin/webpack-dev-server --inline --open",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint",
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -47,12 +48,12 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.8.1",
+    "sinon-stub-promise": "^4.0.0",
+    "node-fetch": "^2.6.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "sinon-stub-promise": "^4.0.0"
+    "react-dom": "^16.9.0"
   }
 }

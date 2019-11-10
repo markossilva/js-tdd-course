@@ -1,22 +1,28 @@
 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path');
 const webpack = require('webpack');
 
 const nodeENV = process.env.NODE_ENV || 'production';
 
 module.exports = {
+  context: path.resolve(__dirname, './src'),
   devtool: 'source-map',
   entry: {
-    filename: './src/main.js',
+    app: './main.js',
   },
   output: {
-    filename: './build.js',
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, './example'),
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, './example'),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/],
         loaders: 'babel-loader',
         query: {
           presets: [

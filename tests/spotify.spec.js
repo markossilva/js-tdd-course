@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-import spotify from '../src/spotify';
+import spotify from '../src/utils/spotify';
 
 describe('Spotify', () => {
   it('should be an OBJECT', () => {

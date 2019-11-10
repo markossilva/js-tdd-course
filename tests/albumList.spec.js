@@ -2,11 +2,11 @@
 import 'jsdom-global/register';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-import renderAlbums from '../src/albumList';
+import albumListComponent from '../src/album/album-list.component';
 
 describe('AlbumList', () => {
   it('should exist', () => {
-    expect(renderAlbums).to.exist;
+    expect(albumListComponent).to.exist;
   });
 
   const data = [
@@ -93,12 +93,12 @@ describe('AlbumList', () => {
 
   it('should create and append the markup given a correct data', () => {
     const element = document.createElement('div');
-    renderAlbums(data, element);
+    albumListComponent(data, element);
     expect(element.innerHTML).to.be.eql(markup);
   });
 
   it('should create and append one more than 1 album', () => {
     const element2 = document.createElement('div');
-    renderAlbums(data2, element2);
+    albumListComponent(data2, element2);
   });
 });

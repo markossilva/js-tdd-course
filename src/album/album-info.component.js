@@ -1,4 +1,4 @@
-export default function renderAlbumInfo(data, element) {
+const albumInfoComponent = (data, element) => {
   const markup = `
     <img class='album-image' src='${data.images[0].url}' alt='${data.name}'>
     <p class='album-title'>${data.name}</p>
@@ -8,4 +8,6 @@ export default function renderAlbumInfo(data, element) {
 
   const e = element;
   e.innerHTML = markup;
-}
+};
+
+export default albumInfoComponent;

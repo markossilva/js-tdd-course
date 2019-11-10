@@ -2,7 +2,7 @@
 import 'jsdom-global/register';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-import renderAlbumInfo from '../src/albumInfo';
+import albumInfoComponent from '../src/album/album-info.component';
 
 describe('Album Info', () => {
   const data = {
@@ -40,7 +40,7 @@ describe('Album Info', () => {
 
   it('should create and append then markup given a correct data ', () => {
     const element = document.createElement('div');
-    renderAlbumInfo(data, element);
+    albumInfoComponent(data, element);
     expect(element.innerHTML).to.be.eql(markup);
   });
 });
